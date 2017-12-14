@@ -2,7 +2,9 @@ package com.infinispan.learn.marshaller;
 
 import com.infinispan.learn.entity.PhoneType;
 import org.infinispan.protostream.EnumMarshaller;
+import org.springframework.stereotype.Component;
 
+@Component
 public class PhoneTypeMarshaller implements EnumMarshaller<PhoneType> {
 
     @Override

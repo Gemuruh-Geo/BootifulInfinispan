@@ -3,11 +3,13 @@ package com.infinispan.learn.marshaller;
 import com.infinispan.learn.entity.Person;
 import com.infinispan.learn.entity.PhoneNumber;
 import org.infinispan.protostream.MessageMarshaller;
+import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class PersonMarshaller implements MessageMarshaller<Person>{
     @Override
     public Person readFrom(ProtoStreamReader protoStreamReader) throws IOException {
